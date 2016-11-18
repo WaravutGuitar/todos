@@ -12,3 +12,8 @@ angular.module('todosApp',[])
   		self.contacts.push(contact)
   	}
   })
+
+  .controller('listcontact', function ($scope, contactsService) {
+   $scope.contacts = contactsService.list()
+
+})
