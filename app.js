@@ -17,3 +17,18 @@ angular.module('todosApp',[])
    $scope.contacts = contactsService.list()
 
 })
+.controller('addtodos', function ($scope, contactsService) {
+ $scope.save = function () {
+   if( $scope.newtodos != undefined && $scope.newtodos != ""){
+     var contact = {
+       title : $scope.newtodos,
+       done : false
+     }
+     contactsService.add(contact)
+     reset()
+   }
+ }
+ function reset(){
+   $scope.newtodos = undefined
+   }
+});
