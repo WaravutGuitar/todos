@@ -15,13 +15,5 @@
   "devDependencies": {
     "http-server": "^0.9.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WaravutGuitar/todos.git"
-  },
-  "bugs": {
-    "url": "https://github.com/WaravutGuitar/todos/issues"
-  },
-  "homepage": "https://github.com/WaravutGuitar/todos#readme",
-  "description": ""
+  
 }
